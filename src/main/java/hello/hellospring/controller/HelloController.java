@@ -41,13 +41,14 @@ public class HelloController {
         return hello;
     }
 
+    //Hello 클래스 생성
     static class Hello {
         private String name;
 
         public String getName() {
             return name;
         }
-
+        
         public void setName(String name) {
             this.name = name;
         }
