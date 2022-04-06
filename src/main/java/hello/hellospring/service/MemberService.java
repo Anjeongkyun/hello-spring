@@ -27,7 +27,7 @@ public class MemberService {
         return member.getId();
     }
 
-    //같은 이름이 있는 중복 회원 막기
+    //같은 이름이 있는 중복 회원 체크
     private void validateDuplicateMember(Member member) {
         memberRepository.findByName(member.getName())
                 .ifPresent(m -> {
